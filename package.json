@@ -1,0 +1,19 @@
+{
+  "name": "02-listar-tareas",
+  "version": "1.0.0",
+  "description": "Este es mi segundo programa en Node.JS subido a gitHub\r ```\r Este programa es un menú TODO-LIST interactivo con la consola",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "inquirer": "^9.1.5",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {}
+}
