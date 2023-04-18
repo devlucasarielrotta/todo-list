@@ -18,13 +18,16 @@ class Tareas {
 
   cargarTareasFromArray(tareas = []) {
     tareas.forEach((tarea) => {
+     
       this._listado[tarea.id] = tarea;
     });
+    
   }
 
   crearTarea(desc = '') {
     const tarea = new Tarea(desc);
     this._listado[tarea.id] = tarea;
+    console.log(this._listado)
   }
 
   listadoCompleto() {
@@ -66,7 +69,7 @@ class Tareas {
   }
 
   borrarTodo() {
-    this._listado = [];
+    delete this._listado;
   }
 
   toggleCompletadas(ids = []) {

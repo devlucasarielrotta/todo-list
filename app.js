@@ -12,6 +12,7 @@ const main = async () => {
     if(tareasDB){
         
         tareas.cargarTareasFromArray(tareasDB);
+        
       
     }
     
@@ -23,10 +24,12 @@ const main = async () => {
             case '1':
                 const desc = await leerInput('Ingrese la descripcion de la tarea:\n ');
                 tareas.crearTarea(desc);
+               
             break;
 
             case '2':
                 tareas.listadoCompleto();
+                
             break;
 
             case '3':
